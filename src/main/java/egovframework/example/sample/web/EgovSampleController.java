@@ -65,6 +65,18 @@ public class EgovSampleController {
 	/** Validator */
 	private final DefaultBeanValidator beanValidator;
 
+	
+	/** test1: 새 페이지 만들기 */
+	@GetMapping(value="/test1.do")
+	public String test1() {
+		return "sample/test1";
+	}
+	@GetMapping("/cal.do")
+	public String abc() {
+		return "sample/cal";
+	}
+	
+	
 	/**
 	 * 글 목록을 조회한다. (pageing)
 	 * @param searchVO - 조회할 정보가 담긴 SampleDefaultVO
@@ -72,7 +84,7 @@ public class EgovSampleController {
 	 * @return "egovSampleList"
 	 * @exception Exception
 	 */
-	@GetMapping("/egovSampleList.do")
+	@GetMapping("/egovList.do")
 	public String selectSampleList(@ModelAttribute("searchVO") SampleDefaultVO searchVO, ModelMap model) throws Exception {
 
 		/** EgovPropertyService.sample */
