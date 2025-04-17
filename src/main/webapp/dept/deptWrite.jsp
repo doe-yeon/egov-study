@@ -21,7 +21,7 @@ th, td {
 <body>
 
 <!-- 작성내용 -->
-<form name="frm" method="post" action="">
+<form name="frm" method="post" action="deptWriteSave.do">
 <table>
 	<tr>
 		<th>부서번호</th>
@@ -41,10 +41,7 @@ th, td {
 		</th>
 		
 	</tr>
-
-
 </table>
-
 </form>
 
 
